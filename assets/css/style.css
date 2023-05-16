@@ -1,3 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap");
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 14px;
+}
 
 /*# sourceMappingURL=style.css.map */
