@@ -1,5 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@700&family=Montserrat:wght@500;700&display=swap');
-
 body {
     font-size: 14px;
+}
+
+h2 {
+    margin: .65rem 0;
+}
+
+a {
+    font-family: Montserrat;
+    color: $white;
+    text-decoration: none;
+    @include displayFlexCenter;
+}
+
+.title {
+    font-family: Montserrat;
+    font-size: .55rem;
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    color: $dark-grayish-blue;
+}
+
+.brand-title {
+    font-size: 1.5rem;
+    line-height: 1.4rem;
+}
+
+.paragrah {
+    font-family: Montserrat;
+    font-size: .73rem;
+    line-height: 1.15rem;
+    color: $dark-grayish-blue;
+}
+
+.new-price {
+    font-family: Fraunces;
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: $dark-cyan;
+}
+
+.old-price {
+    font-family: Montserrat;
+    font-size: .6rem;
+    color: $dark-grayish-blue;
+    text-decoration: line-through;
+    margin-left: .8rem;
 }
