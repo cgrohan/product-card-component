@@ -36,27 +36,27 @@ a {
 }
 
 .brand-title {
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   line-height: 1.4rem;
 }
 
 .paragrah {
   font-family: Montserrat;
-  font-size: 0.73rem;
-  line-height: 1.15rem;
+  font-size: 0.72rem;
+  line-height: 1.3rem;
   color: hsl(228, 12%, 48%);
 }
 
 .new-price {
   font-family: Fraunces;
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: hsl(158, 36%, 37%);
 }
 
 .old-price {
   font-family: Montserrat;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
   color: hsl(228, 12%, 48%);
   text-decoration: line-through;
   margin-left: 0.8rem;
@@ -83,7 +83,6 @@ body {
 }
 
 main {
-  background-color: hsl(0, 0%, 100%);
   margin: 0 auto;
   max-width: 275px;
   border-radius: 0.5rem;
@@ -95,8 +94,15 @@ img {
   max-width: 100%;
 }
 
+.img-desktop {
+  display: none;
+}
+
 section {
+  background-color: hsl(0, 0%, 100%);
   padding: 1rem;
+  min-width: 17rem;
+  border-radius: 0 0 0.5rem 0.5rem;
 }
 
 .prices {
@@ -107,6 +113,46 @@ section {
 
 .icon-cart {
   margin-right: 0.5rem;
+}
+
+@media (min-width: 45rem) {
+  main {
+    display: flex;
+    justify-content: center;
+  }
+  .img-desktop {
+    display: block;
+    border-radius: 0.5rem 0 0 0.5rem;
+  }
+  .img-mobile {
+    display: none;
+  }
+  section {
+    border-radius: 0 0.5rem 0.5rem 0;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  .title {
+    font-size: 0.75rem;
+    letter-spacing: 0.3rem;
+  }
+  .brand-title {
+    font-size: 2.1rem;
+    line-height: 2rem;
+  }
+  .paragrah {
+    font-size: 0.85rem;
+    line-height: 1.3rem;
+  }
+  .new-price {
+    font-size: 1.8rem;
+  }
+  .old-price {
+    font-size: 0.8rem;
+    margin-left: 0.9rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

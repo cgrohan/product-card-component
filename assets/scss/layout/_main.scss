@@ -6,7 +6,6 @@ body {
 }
 
 main {
-    background-color: $white;
     margin: 0 auto;
     max-width: 275px;
     border-radius: .5rem;
@@ -18,8 +17,15 @@ img {
     max-width: 100%;
 }
 
+.img-desktop {
+    display: none;
+}
+
 section {
+    background-color: $white;
     padding: 1rem;
+    min-width: 17rem;
+    border-radius: 0 0 .5rem .5rem;
 }
 
 .prices {
